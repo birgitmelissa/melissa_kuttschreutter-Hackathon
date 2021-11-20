@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+
+	<header>
+		<h1>Travelcravings</h1>
+		<h3>Food, drinks and travel</h3>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="recepten.html">Recepten</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<main>
+
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Naam: <input type="text" name="name" /></label>   
+              </p>
+              <p>
+                <label>Email: <input type="email" name="email" /></label>
+              </p>
+             
+              <p>
+                Favoriete keuken:
+                </p>
+        
+                <input type="checkbox" name="keuken" value="Amerikaans"><label for amerikaans> Amerikaans</label>
+                <input type="checkbox" name="keuken" value="Thais"><label for thais> Thais</label>
+                <input type="checkbox" name="keuken" value="Costa Ricaans"><label for spaans> Spaans</label>
+                <input type="checkbox" name="keuken" value="Sri Lankaans"><label for sri lankaans> Sri Lankaans</label>
+        
+              <p>
+                <label>Vraag of opmerking: <textarea name="vraag"></textarea></label>
+              </p>
+              <p>
+              <label for="myfile">Upload je recept:</label>
+              <input type="file" name="myfile">
+              </p>
+              <p>
+                  <label for="homepage">Link naar je website:</label>
+              <input type="url" name="homepage">
+              </p>
+              <p>
+                <button type="reset">Reset</button>
+                <button type="submit">Verstuur</button>
+              </p>
+        </form>
+
+	</main>
+
+	<footer>
+		Copyright 2021
+	</footer>
+
+	</div>
+</body>
+</html>

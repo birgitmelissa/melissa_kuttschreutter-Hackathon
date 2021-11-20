@@ -1,0 +1,136 @@
+
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 150px 50px auto 30px;
+    grid-gap: 1px;
+	height: 700px;
+	grid-template-areas: 
+	"h"
+    "n"
+	"m"
+	"f"
+}
+
+header {
+	background-color: hotpink;
+	grid-area: h;
+	font-family: 'Praise', cursive;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 4.5em;
+	margin: 0;
+}
+
+header h3 {
+	font-size: 2em;
+	margin: 0;
+}
+
+nav {
+	background-color:indigo;
+	grid-area: n;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 40px;
+}
+
+a {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:link {
+	color: #fff;
+}
+
+a:visited {
+	color: #fff;
+}
+
+a:hover {
+	color:red;
+}
+
+a:active {
+	color:red
+}
+
+main {
+	background-color: rgb(238, 222, 222);
+	grid-area: m;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+main h2 {
+	font-size: 30px;
+}
+
+main p {
+	font-size: 15px;
+}
+
+.afbeelding {
+	width: 49.5%;
+}
+
+iframe {
+	width: 49.5%;
+	
+}
+
+button {
+	background-color:hotpink;
+	font-weight: bolder;
+	width: 80px;
+	height: 30px;
+}
+
+footer {
+	color: #fff;
+	background-color: rgb(12, 53, 51);
+	grid-area: f;
+	text-align: center;
+	padding-top: 5px;
+}
+
+
+@media (min-width: 768px) {
+	
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 150px auto 30px;
+        grid-template-areas: 
+        "n"
+		"h"
+        "m"
+		"f"
+        }
+
+	main p {
+		font-size: 20px;
+}
+
+}
+    
+
+@media (min-width: 960px) {
+	
+.afbeelding {
+	width: 24.6%;
+}
+
+iframe {
+	width: 24.6%;
+}
+
+}
